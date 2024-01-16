@@ -1,0 +1,63 @@
+﻿@model House
+
+<div class="p-4 shadow-sm" style="border-radius: 15px">
+    <h2 class="my-3">Add New House for Rent</h2>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <form asp-action="Create">
+        <div class="form-group row">
+            <div class="form-floating col-md-9 gx-1 mb-3">
+                <input asp-for="Title" class="form-control" />
+                <label asp-for="Title"></label>
+                <span asp-validation-for="Title" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-3 gx-1 mb-3">
+                <input asp-for="Location" class="form-control" />
+                <label asp-for="Location"></label>
+                <span asp-validation-for="Location" class="text-danger small"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="form-floating col-md-4 gx-1 mb-3">
+                <input asp-for="PricePerNight" class="form-control" />
+                <label asp-for="PricePerNight"></label>
+                <span asp-validation-for="PricePerNight" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input asp-for="Bedrooms" class="form-control" />
+                <label asp-for="Bedrooms"></label>
+                <span asp-validation-for="Bedrooms" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input asp-for="Bathrooms" class="form-control" />
+                <label asp-for="Bathrooms"></label>
+                <span asp-validation-for="Bathrooms" class="text-danger small"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="form-floating gx-1 mb-3">
+                <textarea asp-for="Description" class="form-control" style="height: 100px"></textarea>
+                <label asp-for="Description"></label>
+                <span asp-validation-for="Description" class="text-danger small"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input asp-for="HouseImageUrl" class="form-control" />
+                <label asp-for="HouseImageUrl"></label>
+                <span asp-validation-for="HouseImageUrl" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input asp-for="BedroomImageUrl" class="form-control" />
+                <label asp-for="BedroomImageUrl"></label>
+                <span asp-validation-for="BedroomImageUrl" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input asp-for="BathroomImageUrl" class="form-control" />
+                <label asp-for="BathroomImageUrl"></label>
+                <span asp-validation-for="BathroomImageUrl" class="text-danger small"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary rounded-pill">Create</button>
+        <a asp-action="Grid" class="btn btn-secondary rounded-pill">Back to Grid View</a>
+    </form>
+</div>

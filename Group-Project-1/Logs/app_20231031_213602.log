@@ -1,0 +1,34 @@
+2023-10-31 21:36:03.122 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-10-31 21:36:03.956 +01:00 [Information] Now listening on: "https://localhost:7193"
+2023-10-31 21:36:03.957 +01:00 [Information] Now listening on: "http://localhost:5135"
+2023-10-31 21:36:03.959 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-31 21:36:03.959 +01:00 [Information] Hosting environment: "Development"
+2023-10-31 21:36:03.960 +01:00 [Information] Content root path: "/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1"
+2023-10-31 21:36:05.896 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2023-10-31 21:36:05.918 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:05.922 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2023-10-31 21:36:05.927 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-10-31 21:36:05.999 +01:00 [Information] Executed ViewResult - view "Index" executed in 73.6606ms.
+2023-10-31 21:36:06.000 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 77.145ms
+2023-10-31 21:36:06.000 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:06.002 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 106.6743ms
+2023-10-31 21:36:06.005 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-10-31 21:36:06.005 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:36:06.005 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/jquery/jquery.js - -
+2023-10-31 21:36:06.019 +01:00 [Information] The file "/lib/jquery/jquery.js" was not modified
+2023-10-31 21:36:06.019 +01:00 [Information] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified
+2023-10-31 21:36:06.020 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/jquery/jquery.js - - - 304 - text/javascript 14.1855ms
+2023-10-31 21:36:06.020 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 304 - text/javascript 14.6875ms
+2023-10-31 21:36:06.029 +01:00 [Information] Sending file. Request path: '"/Group-Project-1.styles.css"'. Physical path: '"/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1/obj/Debug/net6.0/scopedcss/bundle/Group-Project-1.styles.css"'
+2023-10-31 21:36:06.030 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 200 868 text/css 23.5736ms
+2023-10-31 21:36:06.115 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=PZQCFtmaDlHq19U5F58ZYNmyx7Hn1QaNw8kVskgLbVA - -
+2023-10-31 21:36:06.143 +01:00 [Information] Sending file. Request path: '"/Group-Project-1.styles.css"'. Physical path: '"/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1/obj/Debug/net6.0/scopedcss/bundle/Group-Project-1.styles.css"'
+2023-10-31 21:36:06.144 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=PZQCFtmaDlHq19U5F58ZYNmyx7Hn1QaNw8kVskgLbVA - - - 200 868 text/css 29.2637ms
+2023-10-31 21:36:08.545 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2023-10-31 21:36:08.548 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:08.549 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2023-10-31 21:36:08.550 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-10-31 21:36:08.569 +01:00 [Information] Executed ViewResult - view "Index" executed in 19.7129ms.
+2023-10-31 21:36:08.569 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 20.599ms
+2023-10-31 21:36:08.569 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:08.570 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 24.9717ms

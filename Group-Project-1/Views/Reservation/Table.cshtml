@@ -1,0 +1,13 @@
+﻿
+@model ReservationListViewModel
+
+<h1>List of Reservations</h1>
+<div class="container">
+    <partial name="_ReservationTable" model="Model.Reservations" />
+    @if (!User.IsInRole("Admin"))
+    {
+        <p>
+            <a class="btn btn-primary rounded-pill" asp-controller="Reservation" asp-action="CreateReservation">Add New Reservation</a>
+        </p>
+    }
+</div>

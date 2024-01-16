@@ -1,0 +1,338 @@
+2024-01-16 18:18:55.560 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2024-01-16 18:18:56.577 +01:00 [Information] Now listening on: "https://localhost:7193"
+2024-01-16 18:18:56.577 +01:00 [Information] Now listening on: "http://localhost:5135"
+2024-01-16 18:18:56.580 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2024-01-16 18:18:56.581 +01:00 [Information] Hosting environment: "Development"
+2024-01-16 18:18:56.581 +01:00 [Information] Content root path: "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1"
+2024-01-16 18:18:57.831 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2024-01-16 18:18:57.861 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:18:57.865 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2024-01-16 18:18:57.871 +01:00 [Information] Executing ViewResult, running view "Index".
+2024-01-16 18:18:57.932 +01:00 [Information] Executed ViewResult - view "Index" executed in 62.8015ms.
+2024-01-16 18:18:57.933 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 66.8293ms
+2024-01-16 18:18:57.933 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:18:57.935 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 106.4380ms
+2024-01-16 18:19:02.266 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:19:02.273 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:02.280 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:19:02.376 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:19:02.461 +01:00 [Information] Executed ViewResult - view "Grid" executed in 85.446ms.
+2024-01-16 18:19:02.461 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 180.6699ms
+2024-01-16 18:19:02.461 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:02.462 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 196.4707ms
+2024-01-16 18:19:04.476 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:19:04.494 +01:00 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2024-01-16 18:19:04.499 +01:00 [Information] AuthenticationScheme: "Identity.Application" was challenged.
+2024-01-16 18:19:04.499 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 302 0 - 23.1650ms
+2024-01-16 18:19:04.536 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable - -
+2024-01-16 18:19:04.538 +01:00 [Information] Executing endpoint '"/Account/Login"'
+2024-01-16 18:19:04.561 +01:00 [Information] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login"
+2024-01-16 18:19:04.581 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync" - ModelState is Valid
+2024-01-16 18:19:04.585 +01:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2024-01-16 18:19:04.586 +01:00 [Information] Executed handler method "OnGetAsync", returned result "".
+2024-01-16 18:19:04.587 +01:00 [Information] Executing an implicit handler method - ModelState is Valid
+2024-01-16 18:19:04.588 +01:00 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2024-01-16 18:19:04.614 +01:00 [Information] Executed page "/Account/Login" in 53.1501ms
+2024-01-16 18:19:04.614 +01:00 [Information] Executed endpoint '"/Account/Login"'
+2024-01-16 18:19:04.614 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable - - - 200 - text/html;+charset=utf-8 78.6575ms
+2024-01-16 18:19:06.382 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:19:06.385 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:06.385 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:19:06.430 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:19:06.437 +01:00 [Information] Executed ViewResult - view "Grid" executed in 6.8718ms.
+2024-01-16 18:19:06.437 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 52.4405ms
+2024-01-16 18:19:06.437 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:06.438 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 55.6721ms
+2024-01-16 18:19:07.992 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Table - -
+2024-01-16 18:19:07.993 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Table (Group-Project-1)"'
+2024-01-16 18:19:07.998 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:19:08.006 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:19:08.032 +01:00 [Information] Executed ViewResult - view "Table" executed in 26.0917ms.
+2024-01-16 18:19:08.032 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Table (Group-Project-1)" in 33.7038ms
+2024-01-16 18:19:08.032 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Table (Group-Project-1)"'
+2024-01-16 18:19:08.032 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Table - - - 200 - text/html;+charset=utf-8 40.1294ms
+2024-01-16 18:19:09.176 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:19:09.178 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:09.178 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:19:09.186 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:19:09.201 +01:00 [Information] Executed ViewResult - view "Grid" executed in 14.5956ms.
+2024-01-16 18:19:09.201 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 22.612ms
+2024-01-16 18:19:09.201 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:09.201 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 25.0450ms
+2024-01-16 18:19:10.524 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2024-01-16 18:19:10.525 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:19:10.525 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2024-01-16 18:19:10.525 +01:00 [Information] Executing ViewResult, running view "Index".
+2024-01-16 18:19:10.527 +01:00 [Information] Executed ViewResult - view "Index" executed in 2.2525ms.
+2024-01-16 18:19:10.528 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 2.8033ms
+2024-01-16 18:19:10.528 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:19:10.528 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 4.3147ms
+2024-01-16 18:19:26.105 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:19:26.109 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:26.110 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:19:26.121 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:19:26.134 +01:00 [Information] Executed ViewResult - view "Grid" executed in 13.608ms.
+2024-01-16 18:19:26.134 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 24.339ms
+2024-01-16 18:19:26.134 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:26.135 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 29.6274ms
+2024-01-16 18:19:33.762 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:19:33.766 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:33.767 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:19:33.776 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:19:33.787 +01:00 [Information] Executed ViewResult - view "Grid" executed in 10.301ms.
+2024-01-16 18:19:33.787 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 20.0323ms
+2024-01-16 18:19:33.787 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:19:33.787 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 24.9138ms
+2024-01-16 18:19:33.986 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/bootstrap/js/bootstrap.js - -
+2024-01-16 18:19:34.087 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/jquery/jquery.js - -
+2024-01-16 18:19:34.087 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/jquery-validate/jquery.validate.js - -
+2024-01-16 18:19:34.205 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2024-01-16 18:19:34.262 +01:00 [Information] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'
+2024-01-16 18:19:34.287 +01:00 [Information] Sending file. Request path: '"/lib/jquery-validate/jquery.validate.js"'. Physical path: '"/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/wwwroot/lib/jquery-validate/jquery.validate.js"'
+2024-01-16 18:19:34.290 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19385 text/javascript 84.7110ms
+2024-01-16 18:19:34.314 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/jquery-validate/jquery.validate.js - - - 200 52142 text/javascript 226.7736ms
+2024-01-16 18:19:34.322 +01:00 [Information] Sending file. Request path: '"/lib/bootstrap/js/bootstrap.js"'. Physical path: '"/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/wwwroot/lib/bootstrap/js/bootstrap.js"'
+2024-01-16 18:19:34.322 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/bootstrap/js/bootstrap.js - - - 200 145313 text/javascript 336.1023ms
+2024-01-16 18:19:34.334 +01:00 [Information] Sending file. Request path: '"/lib/jquery/jquery.js"'. Physical path: '"/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/wwwroot/lib/jquery/jquery.js"'
+2024-01-16 18:19:34.334 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/jquery/jquery.js - - - 200 285314 text/javascript 296.2362ms
+2024-01-16 18:19:34.335 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/lib/bootstrap/js/bootstrap.js.map - -
+2024-01-16 18:19:34.339 +01:00 [Information] Sending file. Request path: '"/lib/bootstrap/js/bootstrap.js.map"'. Physical path: '"/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/wwwroot/lib/bootstrap/js/bootstrap.js.map"'
+2024-01-16 18:19:34.339 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/lib/bootstrap/js/bootstrap.js.map - - - 200 306320 text/plain 4.6627ms
+2024-01-16 18:19:38.562 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/favicon.ico - -
+2024-01-16 18:19:38.569 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/favicon.ico - - - 404 0 - 6.1750ms
+2024-01-16 18:20:41.842 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Table - -
+2024-01-16 18:20:41.847 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Table (Group-Project-1)"'
+2024-01-16 18:20:41.848 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:20:41.866 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:20:41.882 +01:00 [Information] Executed ViewResult - view "Table" executed in 16.3292ms.
+2024-01-16 18:20:41.882 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Table (Group-Project-1)" in 33.4272ms
+2024-01-16 18:20:41.882 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Table (Group-Project-1)"'
+2024-01-16 18:20:41.882 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Table - - - 200 - text/html;+charset=utf-8 40.7952ms
+2024-01-16 18:21:00.705 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Details/2 - -
+2024-01-16 18:21:00.708 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Details (Group-Project-1)"'
+2024-01-16 18:21:00.724 +01:00 [Information] Route matched with "{action = \"Details\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32)" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:21:00.768 +01:00 [Information] Executing ViewResult, running view "Details".
+2024-01-16 18:21:00.784 +01:00 [Information] Executed ViewResult - view "Details" executed in 22.8862ms.
+2024-01-16 18:21:00.785 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Details (Group-Project-1)" in 60.3417ms
+2024-01-16 18:21:00.785 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Details (Group-Project-1)"'
+2024-01-16 18:21:00.785 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Details/2 - - - 200 - text/html;+charset=utf-8 79.9408ms
+2024-01-16 18:21:26.787 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:21:26.801 +01:00 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2024-01-16 18:21:26.803 +01:00 [Information] AuthenticationScheme: "Identity.Application" was challenged.
+2024-01-16 18:21:26.804 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 302 0 - 17.2846ms
+2024-01-16 18:21:26.809 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable - -
+2024-01-16 18:21:26.816 +01:00 [Information] Executing endpoint '"/Account/Login"'
+2024-01-16 18:21:26.819 +01:00 [Information] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login"
+2024-01-16 18:21:26.823 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync" - ModelState is Valid
+2024-01-16 18:21:26.825 +01:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2024-01-16 18:21:26.825 +01:00 [Information] Executed handler method "OnGetAsync", returned result "".
+2024-01-16 18:21:26.825 +01:00 [Information] Executing an implicit handler method - ModelState is Valid
+2024-01-16 18:21:26.825 +01:00 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2024-01-16 18:21:26.838 +01:00 [Information] Executed page "/Account/Login" in 19.2772ms
+2024-01-16 18:21:26.838 +01:00 [Information] Executed endpoint '"/Account/Login"'
+2024-01-16 18:21:26.838 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable - - - 200 - text/html;+charset=utf-8 29.7558ms
+2024-01-16 18:21:26.909 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/lib/jquery-validation/dist/jquery.validate.js - -
+2024-01-16 18:21:26.946 +01:00 [Information] Sending file. Request path: '"/Identity/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"/Users/teresapham/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.22/staticwebassets/V5/lib/jquery-validation/dist/jquery.validate.js"'
+2024-01-16 18:21:26.948 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/lib/jquery-validation/dist/jquery.validate.js - - - 200 48676 text/javascript 38.3930ms
+2024-01-16 18:21:27.071 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2024-01-16 18:21:27.099 +01:00 [Information] Sending file. Request path: '"/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"/Users/teresapham/.nuget/packages/microsoft.aspnetcore.identity.ui/6.0.22/staticwebassets/V5/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'
+2024-01-16 18:21:27.099 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19366 text/javascript 28.5232ms
+2024-01-16 18:22:29.041 +01:00 [Information] Request starting HTTP/1.1 POST https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable application/x-www-form-urlencoded 262
+2024-01-16 18:22:29.047 +01:00 [Information] Executing endpoint '"/Account/Login"'
+2024-01-16 18:22:29.057 +01:00 [Information] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login"
+2024-01-16 18:22:29.114 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.LoginModel.OnPostAsync" - ModelState is Valid
+2024-01-16 18:22:29.282 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2024-01-16 18:22:29.283 +01:00 [Information] User logged in.
+2024-01-16 18:22:29.283 +01:00 [Information] Executed handler method "OnPostAsync", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult".
+2024-01-16 18:22:29.285 +01:00 [Information] Executing LocalRedirectResult, redirecting to "/Reservation/Table".
+2024-01-16 18:22:29.285 +01:00 [Information] Executed page "/Account/Login" in 228.5728ms
+2024-01-16 18:22:29.285 +01:00 [Information] Executed endpoint '"/Account/Login"'
+2024-01-16 18:22:29.286 +01:00 [Information] Request finished HTTP/1.1 POST https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable application/x-www-form-urlencoded 262 - 302 0 - 245.8100ms
+2024-01-16 18:22:29.290 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:22:29.296 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:29.299 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:29.337 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:22:29.366 +01:00 [Information] Executed ViewResult - view "Table" executed in 31.0715ms.
+2024-01-16 18:22:29.366 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)" in 67.1138ms
+2024-01-16 18:22:29.366 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:29.366 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 200 - text/html;+charset=utf-8 76.1928ms
+2024-01-16 18:22:44.590 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Details/1 - -
+2024-01-16 18:22:44.597 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:22:44.605 +01:00 [Information] Route matched with "{action = \"Details\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32)" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:44.616 +01:00 [Information] Executing ViewResult, running view "Details".
+2024-01-16 18:22:44.634 +01:00 [Information] Executed ViewResult - view "Details" executed in 19.8331ms.
+2024-01-16 18:22:44.635 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)" in 29.373ms
+2024-01-16 18:22:44.635 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:22:44.635 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Details/1 - - - 200 - text/html;+charset=utf-8 45.0715ms
+2024-01-16 18:22:52.434 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:22:52.443 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:52.444 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:52.451 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:22:52.467 +01:00 [Information] Executed ViewResult - view "Table" executed in 16.7315ms.
+2024-01-16 18:22:52.467 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)" in 23.567ms
+2024-01-16 18:22:52.468 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:52.468 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 200 - text/html;+charset=utf-8 34.3725ms
+2024-01-16 18:22:54.502 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Details/6 - -
+2024-01-16 18:22:54.504 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:22:54.504 +01:00 [Information] Route matched with "{action = \"Details\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32)" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:54.508 +01:00 [Information] Executing ViewResult, running view "Details".
+2024-01-16 18:22:54.517 +01:00 [Information] Executed ViewResult - view "Details" executed in 9.5904ms.
+2024-01-16 18:22:54.518 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)" in 13.862ms
+2024-01-16 18:22:54.518 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:22:54.519 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Details/6 - - - 200 - text/html;+charset=utf-8 16.2810ms
+2024-01-16 18:22:56.718 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:22:56.727 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:56.728 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:56.735 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:22:56.758 +01:00 [Information] Executed ViewResult - view "Table" executed in 22.6976ms.
+2024-01-16 18:22:56.758 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)" in 30.0083ms
+2024-01-16 18:22:56.758 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:56.758 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 200 - text/html;+charset=utf-8 40.4044ms
+2024-01-16 18:22:57.767 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Details/12 - -
+2024-01-16 18:22:57.769 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:22:57.770 +01:00 [Information] Route matched with "{action = \"Details\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32)" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:57.776 +01:00 [Information] Executing ViewResult, running view "Details".
+2024-01-16 18:22:57.787 +01:00 [Information] Executed ViewResult - view "Details" executed in 10.712ms.
+2024-01-16 18:22:57.787 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)" in 13.4161ms
+2024-01-16 18:22:57.787 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:22:57.787 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Details/12 - - - 200 - text/html;+charset=utf-8 20.6249ms
+2024-01-16 18:22:59.388 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:22:59.397 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:59.397 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:22:59.410 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:22:59.427 +01:00 [Information] Executed ViewResult - view "Table" executed in 17.3232ms.
+2024-01-16 18:22:59.427 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)" in 23.1612ms
+2024-01-16 18:22:59.427 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:22:59.428 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 200 - text/html;+charset=utf-8 39.6665ms
+2024-01-16 18:23:00.518 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Details/1 - -
+2024-01-16 18:23:00.522 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:23:00.523 +01:00 [Information] Route matched with "{action = \"Details\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32)" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:23:00.528 +01:00 [Information] Executing ViewResult, running view "Details".
+2024-01-16 18:23:00.533 +01:00 [Information] Executed ViewResult - view "Details" executed in 5.54ms.
+2024-01-16 18:23:00.533 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)" in 10.4639ms
+2024-01-16 18:23:00.533 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Details (Group-Project-1)"'
+2024-01-16 18:23:00.533 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Details/1 - - - 200 - text/html;+charset=utf-8 15.6094ms
+2024-01-16 18:23:15.116 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/User/Table - -
+2024-01-16 18:23:15.126 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:23:15.132 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"User\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.UserController" ("Group-Project-1").
+2024-01-16 18:23:15.165 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:23:15.196 +01:00 [Information] Executed ViewResult - view "Table" executed in 32.8543ms.
+2024-01-16 18:23:15.196 +01:00 [Information] Executed action "Group_Project_1.Controllers.UserController.Table (Group-Project-1)" in 63.8616ms
+2024-01-16 18:23:15.196 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:23:15.197 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/User/Table - - - 200 - text/html;+charset=utf-8 81.0769ms
+2024-01-16 18:23:36.535 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:23:36.541 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:23:36.541 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:23:36.564 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:23:36.576 +01:00 [Information] Executed ViewResult - view "Grid" executed in 13.0295ms.
+2024-01-16 18:23:36.576 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 34.9776ms
+2024-01-16 18:23:36.577 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:23:36.577 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 41.5540ms
+2024-01-16 18:23:37.397 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:23:37.423 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:23:37.425 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:23:37.450 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:23:37.478 +01:00 [Information] Executed ViewResult - view "Grid" executed in 27.7592ms.
+2024-01-16 18:23:37.478 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 53.0643ms
+2024-01-16 18:23:37.478 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:23:37.478 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 82.3911ms
+2024-01-16 18:23:54.708 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/User/Table - -
+2024-01-16 18:23:54.717 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:23:54.718 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"User\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.UserController" ("Group-Project-1").
+2024-01-16 18:23:54.743 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:23:54.758 +01:00 [Information] Executed ViewResult - view "Table" executed in 15.8105ms.
+2024-01-16 18:23:54.759 +01:00 [Information] Executed action "Group_Project_1.Controllers.UserController.Table (Group-Project-1)" in 40.6785ms
+2024-01-16 18:23:54.759 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:23:54.759 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/User/Table - - - 200 - text/html;+charset=utf-8 51.2171ms
+2024-01-16 18:24:04.984 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/User/Table - -
+2024-01-16 18:24:04.991 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:24:04.992 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"User\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.UserController" ("Group-Project-1").
+2024-01-16 18:24:05.013 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:24:05.029 +01:00 [Information] Executed ViewResult - view "Table" executed in 16.5722ms.
+2024-01-16 18:24:05.029 +01:00 [Information] Executed action "Group_Project_1.Controllers.UserController.Table (Group-Project-1)" in 37.5162ms
+2024-01-16 18:24:05.029 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:24:05.029 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/User/Table - - - 200 - text/html;+charset=utf-8 45.6210ms
+2024-01-16 18:24:05.683 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:24:05.684 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:24:05.685 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:24:05.688 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:24:05.713 +01:00 [Information] Executed ViewResult - view "Table" executed in 24.6412ms.
+2024-01-16 18:24:05.713 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)" in 28.5511ms
+2024-01-16 18:24:05.713 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:24:05.713 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 200 - text/html;+charset=utf-8 30.4275ms
+2024-01-16 18:24:06.752 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:24:06.754 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:24:06.754 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:24:06.757 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:24:06.771 +01:00 [Information] Executed ViewResult - view "Grid" executed in 14.1729ms.
+2024-01-16 18:24:06.771 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 16.9466ms
+2024-01-16 18:24:06.772 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:24:06.772 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 19.6231ms
+2024-01-16 18:24:07.482 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2024-01-16 18:24:07.484 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:24:07.484 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2024-01-16 18:24:07.485 +01:00 [Information] Executing ViewResult, running view "Index".
+2024-01-16 18:24:07.486 +01:00 [Information] Executed ViewResult - view "Index" executed in 1.7729ms.
+2024-01-16 18:24:07.487 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 2.0828ms
+2024-01-16 18:24:07.487 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:24:07.487 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 4.7166ms
+2024-01-16 18:24:09.599 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/User/Table - -
+2024-01-16 18:24:09.601 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:24:09.601 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"User\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.UserController" ("Group-Project-1").
+2024-01-16 18:24:09.628 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:24:09.642 +01:00 [Information] Executed ViewResult - view "Table" executed in 13.075ms.
+2024-01-16 18:24:09.642 +01:00 [Information] Executed action "Group_Project_1.Controllers.UserController.Table (Group-Project-1)" in 40.0617ms
+2024-01-16 18:24:09.642 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.UserController.Table (Group-Project-1)"'
+2024-01-16 18:24:09.642 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/User/Table - - - 200 - text/html;+charset=utf-8 42.3085ms
+2024-01-16 18:24:10.448 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2024-01-16 18:24:10.450 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:24:10.450 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"Reservation\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.ReservationController" ("Group-Project-1").
+2024-01-16 18:24:10.454 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:24:10.477 +01:00 [Information] Executed ViewResult - view "Table" executed in 22.7609ms.
+2024-01-16 18:24:10.477 +01:00 [Information] Executed action "Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)" in 26.558ms
+2024-01-16 18:24:10.477 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.ReservationController.Table (Group-Project-1)"'
+2024-01-16 18:24:10.477 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 200 - text/html;+charset=utf-8 28.6342ms
+2024-01-16 18:24:11.568 +01:00 [Information] Request starting HTTP/1.1 POST https://localhost:7193/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225
+2024-01-16 18:24:11.572 +01:00 [Information] Executing endpoint '"/Account/Logout"'
+2024-01-16 18:24:11.582 +01:00 [Information] Route matched with "{page = \"/Account/Logout\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Logout"
+2024-01-16 18:24:11.587 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.LogoutModel.OnPost" - ModelState is Valid
+2024-01-16 18:24:11.590 +01:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2024-01-16 18:24:11.590 +01:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2024-01-16 18:24:11.590 +01:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2024-01-16 18:24:11.591 +01:00 [Information] User logged out.
+2024-01-16 18:24:11.591 +01:00 [Information] Executed handler method "OnPost", returned result "Microsoft.AspNetCore.Mvc.LocalRedirectResult".
+2024-01-16 18:24:11.592 +01:00 [Information] Executing LocalRedirectResult, redirecting to "/".
+2024-01-16 18:24:11.592 +01:00 [Information] Executed page "/Account/Logout" in 9.7204ms
+2024-01-16 18:24:11.592 +01:00 [Information] Executed endpoint '"/Account/Logout"'
+2024-01-16 18:24:11.592 +01:00 [Information] Request finished HTTP/1.1 POST https://localhost:7193/Identity/Account/Logout?returnUrl=%2F application/x-www-form-urlencoded 225 - 302 0 - 23.5663ms
+2024-01-16 18:24:11.595 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2024-01-16 18:24:11.595 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:24:11.595 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2024-01-16 18:24:11.595 +01:00 [Information] Executing ViewResult, running view "Index".
+2024-01-16 18:24:11.596 +01:00 [Information] Executed ViewResult - view "Index" executed in 0.857ms.
+2024-01-16 18:24:11.596 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 0.9408ms
+2024-01-16 18:24:11.596 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:24:11.596 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 1.2335ms
+2024-01-16 18:24:20.520 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/Account/Register - -
+2024-01-16 18:24:20.523 +01:00 [Information] Executing endpoint '"/Account/Register"'
+2024-01-16 18:24:20.543 +01:00 [Information] Route matched with "{page = \"/Account/Register\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Register"
+2024-01-16 18:24:20.546 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync" - ModelState is Valid
+2024-01-16 18:24:20.547 +01:00 [Information] Executed handler method "OnGetAsync", returned result "".
+2024-01-16 18:24:20.547 +01:00 [Information] Executing an implicit handler method - ModelState is Valid
+2024-01-16 18:24:20.547 +01:00 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2024-01-16 18:24:20.581 +01:00 [Information] Executed page "/Account/Register" in 37.5372ms
+2024-01-16 18:24:20.581 +01:00 [Information] Executed endpoint '"/Account/Register"'
+2024-01-16 18:24:20.581 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/Account/Register - - - 200 - text/html;+charset=utf-8 61.1860ms
+2024-01-16 18:24:21.997 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/Account/Login - -
+2024-01-16 18:24:21.997 +01:00 [Information] Executing endpoint '"/Account/Login"'
+2024-01-16 18:24:21.998 +01:00 [Information] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login"
+2024-01-16 18:24:21.998 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync" - ModelState is Valid
+2024-01-16 18:24:21.999 +01:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2024-01-16 18:24:21.999 +01:00 [Information] Executed handler method "OnGetAsync", returned result "".
+2024-01-16 18:24:21.999 +01:00 [Information] Executing an implicit handler method - ModelState is Valid
+2024-01-16 18:24:21.999 +01:00 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2024-01-16 18:24:22.002 +01:00 [Information] Executed page "/Account/Login" in 4.4238ms
+2024-01-16 18:24:22.002 +01:00 [Information] Executed endpoint '"/Account/Login"'
+2024-01-16 18:24:22.002 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/Account/Login - - - 200 - text/html;+charset=utf-8 5.3035ms

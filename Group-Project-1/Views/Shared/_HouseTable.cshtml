@@ -1,0 +1,57 @@
+﻿@model IEnumerable<House>
+
+<table class="table table-hover shadow-sm overflow-hidden" style="border-radius: 15px">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Location</th>
+            <th>Room info</th>
+            <th>Description</th>
+            <th>Price/night</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var house in Model)
+        {
+            <tr style="cursor: pointer;" onclick="window.location.href = '@Url.Action("Details", "House", new { id = house.HouseId })';">
+                <td>@house.HouseId</td>
+                <td>
+                    <div class="d-flex align-items-center">
+                        <img src="@house.HouseImageUrl" alt="House Image" style="width: 70px; height: 70px"
+                             class="rounded-circle" />
+                        <div class="ms-3">
+                            @house.Title
+                        </div>
+                    </div>
+                </td>
+                <td>@house.Location</td>
+                <td>
+                    <span class="badge rounded-pill bg-light text-dark">@house.Bedrooms Bedrooms</span>
+                    <span class="badge rounded-pill bg-light text-dark">@house.Bathrooms Bathrooms</span>
+                </td>
+                <td>@house.Description</td>
+                <td>@house.PricePerNight.ToString("0 kr")</td>
+                <td>
+                    @if (User?.Identity != null)
+                    {
+                        if (User.Identity.Name == house.User?.UserName)
+                        {
+                            <a class="w-100 btn btn-sm btn-secondary rounded-pill mb-1" asp-action="Update" asp-route-id="@house.HouseId">Update</a>
+                            <a class="w-100 btn btn-sm btn-danger rounded-pill" asp-action="Delete" asp-route-id="@house.HouseId">Delete</a>
+                        }
+                        else if (User.IsInRole("Admin"))
+                        {
+                            <a class="w-100 btn btn-sm btn-danger rounded-pill" asp-action="Delete" asp-route-id="@house.HouseId">Delete</a>
+                        }
+                        else
+                        {
+                            <a class="w-100 btn btn-sm btn-primary rounded-pill" asp-controller="Reservation" asp-action="CreateReservationFromId" asp-route-houseId="@house.HouseId">Reserve</a>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    <tbody>
+</table>

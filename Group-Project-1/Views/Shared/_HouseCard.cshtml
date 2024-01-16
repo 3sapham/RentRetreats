@@ -1,0 +1,76 @@
+﻿@model House
+
+<div class="col">
+    <div class="card shadow-sm overflow-hidden" style="border-radius: 15px">
+        @if (Model.BedroomImageUrl == null && Model.BedroomImageUrl == null)
+        {
+            <img src="@Model.HouseImageUrl" class="card-img-top" alt="@Model.Title" style="height: 200px; object-fit: cover;" />
+        }
+        else
+        {
+            <div id="carouselImages-@Model.HouseId" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselImages-@Model.HouseId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    @if (Model.BedroomImageUrl != null || Model.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages-@Model.HouseId" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    }
+                    @if (Model.BedroomImageUrl != null && Model.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages-@Model.HouseId" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    }
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="@Model.HouseImageUrl" alt="@Model.Title" class="card-img-top" style="height: 200px; object-fit: cover;">
+                    </div>
+                    @if (Model.BedroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.BedroomImageUrl" alt="Bedroom of the house" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        </div>
+                    }
+                    @if (Model.BathroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.BathroomImageUrl" alt="Bathroom of the house" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselImages-@Model.HouseId" role="button" data-bs-slide-to="prev" style="display: flex; align-items: center;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselImages-@Model.HouseId" role="button" data-bs-slide="next" style="display: flex; align-items: center;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        }
+        <div class="card-body">
+            <div class="d-flex justify-content-between mt-2">
+                <h6 class="card-title text-start">
+                    <a asp-controller="House" asp-action="Details" asp-route-id="@Model.HouseId">@Model.Title</a>
+                </h6>
+                <h6 class="text-nowrap">
+                    @Model.PricePerNight.ToString("0 kr / night")
+                </h6>
+            </div>
+            <p class="card-subtitle mb-2">@Model.Location</p>
+            <p class="card-subtitle text-muted"><small>@Model.Bedrooms Bedrooms, @Model.Bathrooms Bathrooms</small></p>
+        </div>
+        <div class="card-footer">
+            @if (User.Identity?.Name == @Model.User?.UserName && (User.IsInRole("Host")))
+            {
+                <a class="btn btn-sm btn-secondary rounded-pill" asp-action="Update" asp-route-id="@Model.HouseId">Update</a>
+                <a class="btn btn-sm btn-danger rounded-pill" asp-action="Delete" asp-route-id="@Model.HouseId">Delete</a>
+            }
+            else if (User.IsInRole("Admin"))
+            {
+                <a class="btn btn-sm btn-danger rounded-pill" asp-action="Delete" asp-route-id="@Model.HouseId">Delete</a>
+            }
+            else
+            {
+                <a class="btn btn-sm btn-primary rounded-pill w-100" asp-controller="Reservation" asp-action="CreateReservationFromId" asp-route-houseId="@Model.HouseId">Reserve House</a>
+            }
+        </div>
+    </div>
+</div>

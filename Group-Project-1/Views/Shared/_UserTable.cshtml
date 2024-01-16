@@ -1,0 +1,36 @@
+﻿@model IEnumerable<UserWithRolesViewModel>
+
+<div class="container">
+    <table class="table table-striped overflow-hidden" style="border-radius: 15px">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Roles</th>
+            <th>Houses</th>
+        </tr>
+        @foreach (var userWithRoles in Model)
+        {
+            <tr>
+                <td>@userWithRoles.User.Id</td>
+                <td>@userWithRoles.User.FirstName @userWithRoles.User.LastName </td>
+                <td>@userWithRoles.User.Email</td>
+                <td>@userWithRoles.User.PhoneNumber</td>
+                <td>
+                    @foreach (var role in @userWithRoles.Roles)
+                    {
+                        <span class="badge rounded-pill bg-light text-dark">@role</span>
+                    }
+
+                </td>
+                <td>
+                    @if (userWithRoles?.User.Houses != null)
+                    {
+                        <p>@string.Join(", ", userWithRoles.User.Houses.Select(house => $"{house.Title}"))</p>
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>  

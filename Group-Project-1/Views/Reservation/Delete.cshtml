@@ -1,0 +1,37 @@
+﻿@model Reservation
+
+<h2 class="my-4">Delete Reservation</h2>
+
+<div class="conatiner">
+    <div class="row gx-5 shadow-sm overflow-hidden mb-4" style="border-radius: 15px">
+        <img alt="@Model.House?.Title" src="@Model.House?.HouseImageUrl" class="img-fluid col-md-6 p-0" />
+        <dl class="row col-md-6 p-4">
+            <h5>@Model.House?.Title</h5>
+            <hr />
+            <dt class="col-sm-5">Reservation Id</dt>
+            <dd class="col-sm-7">@Model.ReservationId</dd>
+            <hr />
+            <dt class="col-sm-5">Host</dt>
+            <dd class="col-sm-7">@Model.House?.User?.FirstName @Model.House?.User?.LastName</dd>
+            <hr />
+            <dt class="col-sm-5">Check In Date</dt>
+            <dd class="col-sm-7">@Model.CheckInDate.ToLongDateString()</dd>
+
+            <dt class="col-sm-5">Check Out Date</dt>
+            <dd class="col-sm-7">@Model.CheckOutDate.ToLongDateString()</dd>
+            <hr />
+            <dt class="col-sm-5">Booking Duration</dt>
+            <dd class="col-sm-7">@Model.BookingDuration.ToString("0 days")</dd>
+
+            <dt class="col-sm-5">Total Price</dt>
+            <dd class="col-sm-7">@Model.TotalPrice.ToString("0 000 kr")</dd>
+        </dl>
+    </div>
+
+    <p><strong>Are you sure you want to delete reservation #@Model.ReservationId?</strong></p>
+
+    <form asp-action="DeleteConfirmed" asp-route-id="@Model.ReservationId" method="post">
+        <button type="submit" class="btn btn-danger rounded-pill">Delete</button>
+        <a asp-action="Table" class="btn btn-secondary rounded-pill">Cancel</a>
+    </form>
+</div>

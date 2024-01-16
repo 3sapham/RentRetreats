@@ -1,0 +1,85 @@
+﻿@model Reservation
+
+<h3 class="my-4">
+    Reservation #@Model.ReservationId
+</h3>
+<div class="container">
+    <div class="row gx-5 shadow-sm overflow-hidden" style="border-radius: 15px">
+        @if (Model.House?.BedroomImageUrl == null && Model.House?.BathroomImageUrl == null)
+        {
+            <img alt="@Model.House?.Title" src="@Model.House?.HouseImageUrl" class="img-fluid col-md-6 p-0" />
+        }
+        else
+        {
+            <div id="carouselImages" class="carousel slide col-md-6 p-0" data-bs-ride="true" style="height: 65vh; overflow: hidden">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    @if (Model.House.BedroomImageUrl != null || Model.House.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    }
+                    @if (Model.House.BedroomImageUrl != null && Model.House.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    }
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="@Model.House.HouseImageUrl" alt="@Model.House.Title" style="height: 65vh;">
+                    </div>
+                    @if (Model.House.BedroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.House.BedroomImageUrl" alt="Bedroom of the house" style="height: 65vh;">
+                        </div>
+                    }
+                    @if (Model.House.BathroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.House.BathroomImageUrl" alt="Bathroom of the house" style="height: 65vh;">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselImages" role="button" data-bs-slide-to="prev" style="display: flex; align-items: center;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselImages" role="button" data-bs-slide="next" style="display: flex; align-items: center;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        }
+        <dl class="row col-md-6 p-4">
+            <h5>
+                <a asp-controller="House" asp-action="Details" asp-route-id="@Model.HouseId">@Model?.House?.Title</a>
+            </h5>
+            <dt class="col-sm-5"><strong>Reserved by</strong></dt>
+            <dd class="col-sm-7">@Model.User?.FirstName @Model.User?.LastName</dd>
+
+            <dt class="col-sm-5"><strong>Date Created:</strong></dt>
+            <dd class="col-sm-7">@Model.DateCreated.ToLongDateString()</dd>
+            <hr />
+            <dt class="col-sm-5"><strong>Check-In</strong></dt>
+            <dd class="col-sm-7">@Model.CheckInDate.ToLongDateString()</dd>
+
+            <dt class="col-sm-5"><strong>Check-Out</strong></dt>
+            <dd class="col-sm-7">@Model.CheckOutDate.ToLongDateString()</dd>
+            <hr />
+            <dt class="col-sm-5"><strong>Booking duration</strong></dt>
+            <dd class="col-sm-7">@Model.BookingDuration.ToString("0 days")</dd>
+
+            <dt class="col-sm-5"><strong>Price per night</strong> </dt>
+            <dd class="col-sm-7">@Model.House?.PricePerNight.ToString("0 kr")</dd>
+            <hr />
+            <dt class="col-sm-5"><strong>Total Price</strong> </dt>
+            <dd class="col-sm-7"><strong> @Model.TotalPrice.ToString("0 000 kr")</strong></dd>
+        </dl>
+    </div>
+</div>
+<div class="mt-3">
+    <a class="btn btn-outline-dark rounded-pill" asp-controller="Reservation" asp-action="Table">Back to Reservations</a>
+    @if (!User.IsInRole("Admin"))
+    {
+        <a class="btn btn-secondary rounded-pill" asp-action="Update" asp-route-id="@Model.ReservationId">Update</a>
+    }
+    <a class="btn btn-danger rounded-pill" asp-action="Delete" asp-route-id="@Model.ReservationId">Delete</a>
+</div>

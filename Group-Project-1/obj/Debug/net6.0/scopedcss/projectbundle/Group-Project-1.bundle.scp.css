@@ -1,0 +1,45 @@
+/* _content/Group-Project-1/Views/Shared/_Layout.cshtml.rz.scp.css */
+body[b-4isb6q6otv] {
+    background-color: #fcf8f3;
+}
+
+nav[b-4isb6q6otv] {
+    background-color: #100118;
+}
+
+a.navbar-brand[b-4isb6q6otv] {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+a[b-4isb6q6otv] {
+    color: #0077cc;
+}
+
+.nav-pills .nav-link.active[b-4isb6q6otv], .nav-pills .show > .nav-link[b-4isb6q6otv] {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.border-bottom[b-4isb6q6otv] {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-4isb6q6otv] {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-4isb6q6otv] {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.footer[b-4isb6q6otv] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}

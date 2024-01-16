@@ -1,0 +1,86 @@
+﻿@model Reservation
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<div class="row gx-5">
+    <h2 class="mb-3">Make a Reservation for @Model.House?.Title</h2>
+    <div class="col-md-7 shadow-sm p-4" style="border-radius: 15px">
+        <form asp-action="CreateReservation">
+            <input type="hidden" asp-for="@Model.HouseId">
+            <div class="form-group row">
+                <div class="form-floating col-md-6 mb-3 gx-1">
+                    <input type="date" value="@DateTime.Today" asp-for="@Model.CheckInDate" class="form-control" min="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                    <label asp-for="@Model.CheckInDate"></label>
+                    <span asp-validation-for="@Model.CheckInDate" class="text-danger small"></span>
+                </div>
+                <div class="form-floating col-md-6 mb-3 gx-1">
+                    <input type="date" value="@DateTime.Today.AddDays(1)" asp-for="@Model.CheckOutDate" class="form-control" min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" />
+                    <label asp-for="@Model.CheckOutDate"></label>
+                    <span asp-validation-for="@Model.CheckOutDate" class="text-danger small"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill">Create</button>
+            <a asp-controller="House" asp-action="Grid" class="btn btn-secondary rounded-pill">Back to Houses</a>
+        </form>
+    </div>
+    <div class="card-body col-md-5 shadow-sm" style="border-radius: 15px">
+        @if (Model.House?.BedroomImageUrl == null && Model.House?.BedroomImageUrl == null)
+        {
+            <img src="@Model.House?.HouseImageUrl" class="card-img-top" style="border-radius: 15px" alt="@Model.House?.Title" />
+        }
+        else
+        {
+            <div id="carouselImages" class="carousel slide" data-bs-ride="true" style="border-radius: 15px; overflow: hidden;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    @if (Model.House?.BedroomImageUrl != null || Model.House?.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    }
+                    @if (Model.House?.BedroomImageUrl != null && Model.House?.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    }
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="@Model.House?.HouseImageUrl" alt="@Model.House?.Title" class="card-img-top" style="height: 300px;">
+                    </div>
+                    @if (Model.House?.BedroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.House?.BedroomImageUrl" alt="Bedroom of the house" class="card-img-top" style="height: 300px;">
+                        </div>
+                    }
+                    @if (Model.House?.BathroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.House?.BathroomImageUrl" alt="Bathroom of the house" class="card-img-top" style="height: 300px;">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselImages" role="button" data-bs-slide-to="prev" style="display: flex; align-items: center;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselImages" role="button" data-bs-slide="next" style="display: flex; align-items: center;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        }
+        <h5 class="mt-3">@Model.House?.Title</h5>
+        <hr />
+        <dl class="row p-2">
+            <dt class="col-sm-5"><strong>Price per night</strong> </dt>
+            <dd class="col-sm-7">@Model.House?.PricePerNight</dd>
+
+            <dt class="col-sm-5"><strong>Host</strong></dt>
+            <dd class="col-sm-7">@Model.House?.User?.FirstName @Model.House?.User?.LastName</dd>
+
+            <dt class="col-sm-5"><strong>Location</strong></dt>
+            <dd class="col-sm-7">@Model.House?.Location</dd>
+        </dl>
+        <hr />
+        <span class="badge rounded-pill bg-light text-dark p-2">@Model.House?.Bedrooms Bedrooms</span>
+        <span class="badge rounded-pill bg-light text-dark p-2">@Model.House?.Bathrooms Bathrooms</span>
+    </div>
+</div>

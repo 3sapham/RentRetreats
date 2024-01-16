@@ -1,0 +1,19 @@
+2023-10-30 23:27:53.140 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-10-30 23:27:54.685 +01:00 [Information] Now listening on: "https://localhost:7193"
+2023-10-30 23:27:54.686 +01:00 [Information] Now listening on: "http://localhost:5135"
+2023-10-30 23:27:54.692 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-30 23:27:54.694 +01:00 [Information] Hosting environment: "Development"
+2023-10-30 23:27:54.695 +01:00 [Information] Content root path: "/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1"
+2023-10-30 23:27:57.914 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2023-10-30 23:27:58.269 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-30 23:27:58.276 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2023-10-30 23:27:58.284 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-10-30 23:27:58.414 +01:00 [Information] Executed ViewResult - view "Index" executed in 134.438ms.
+2023-10-30 23:27:58.415 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 138.6347ms
+2023-10-30 23:27:58.415 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-30 23:27:58.419 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 508.6302ms
+2023-10-30 23:27:58.419 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-30 23:27:58.452 +01:00 [Information] The file "/Group-Project-1.styles.css" was not modified
+2023-10-30 23:27:58.455 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 304 - text/css 35.1915ms
+2023-10-30 23:27:58.516 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/css/site.css - -
+2023-10-30 23:27:58.524 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/css/site.css - - - 404 0 - 7.6842ms

@@ -1,0 +1,57 @@
+﻿@model Reservation
+
+<div class="row gx-5">
+    <div class="col-md-7 shadow-sm p-4" style="border-radius: 15px">
+        <h2 class="mb-3">Update Reservation #@Model.ReservationId</h2>
+        <form asp-action="Update">
+            <input type="hidden" asp-for="ReservationId" />
+            <div class="form-group row">
+                <div class="form-floating mb-3 gx-1">
+                    <select asp-for="HouseId" asp-items="ViewBag.HouseSelectList" class="form-control">
+                        <option value="">Select a house...</option>
+                    </select>
+                    <label asp-for="HouseId"></label>
+                    <span asp-validation-for="HouseId" class="text-danger small"></span>
+                </div>
+                <div class="form-floating col-md-6 mb-3 gx-1">
+                    <input type="date" asp-for="CheckInDate" class="form-control" />
+                    <label asp-for="CheckInDate"></label>
+                    <span asp-validation-for="CheckInDate" class="text-danger small"></span>
+                </div>
+                <div class="form-floating col-md-6 mb-3 gx-1">
+                    <input type="date" asp-for="CheckOutDate" class="form-control" />
+                    <label asp-for="CheckOutDate"></label>
+                    <span asp-validation-for="CheckOutDate" class="text-danger small"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary rounded-pill">Save Changes</button>
+            <a asp-action="Table" class="btn btn-secondary rounded-pill">Cancel</a>
+        </form>
+    </div>
+    <div class="col-md-5 shadow-sm" style="border-radius: 15px">
+       <img src="@Model.House?.HouseImageUrl" class="card-img-top" style="border-radius: 15px" alt="@Model.House?.Title" />
+       <dl class="card-body row">
+            <h5>@Model.House?.Title</h5>
+            <dt class="col-sm-5"><strong>Reserved by</strong></dt>
+            <dd class="col-sm-7">@Model.User?.FirstName @Model.User?.LastName</dd>
+
+            <dt class="col-sm-5"><strong>Date Created</strong></dt>
+            <dd class="col-sm-7">@Model.DateCreated.ToLongDateString()</dd>
+            <hr />
+            <dt class="col-sm-5"><strong>Check-In</strong></dt>
+            <dd class="col-sm-7">@Model.CheckInDate.ToLongDateString()</dd>
+
+            <dt class="col-sm-5"><strong>Check-Out</strong></dt>
+            <dd class="col-sm-7">@Model.CheckOutDate.ToLongDateString()</dd>
+            <hr />
+            <dt class="col-sm-5"><strong>Booking duration</strong></dt>
+            <dd class="col-sm-7">@Model.BookingDuration.ToString("0 days")</dd>
+
+            <dt class="col-sm-5"><strong>Price per night</strong> </dt>
+            <dd class="col-sm-7">@Model.House?.PricePerNight.ToString("0 000 kr")</dd>
+            <hr />
+            <dt class="col-sm-5"><strong>Total Price</strong> </dt>
+            <dd class="col-sm-7"><strong> @Model.TotalPrice.ToString("0 000 kr")</strong></dd>
+        </dl>
+    </div>
+</div>

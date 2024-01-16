@@ -1,0 +1,82 @@
+﻿@model House
+
+<h2 class="my-4">Delete House</h2>
+
+<div class="container">
+    <div class="row gx-5 shadow-sm overflow-hidden mb-4" style="border-radius: 15px">
+        @if (Model.BedroomImageUrl == null && Model.BathroomImageUrl == null)
+        {
+            <img alt="@Model.Title" src="@Model.HouseImageUrl" class="img-fluid col-md-6 p-0" />
+        }
+        else
+        {
+            <div id="carouselImages" class="carousel slide col-md-6 p-0" data-bs-ride="true" style="height: 65vh; overflow: hidden">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    @if (Model.BedroomImageUrl != null || Model.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    }
+                    @if (Model.BedroomImageUrl != null && Model.BathroomImageUrl != null)
+                    {
+                        <button type="button" data-bs-target="#carouselImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    }
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="@Model.HouseImageUrl" alt="@Model.Title" style="height: 65vh;">
+                    </div>
+                    @if (Model.BedroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.BedroomImageUrl" alt="Bedroom of the house" style="height: 65vh;">
+                        </div>
+                    }
+                    @if (Model.BathroomImageUrl != null)
+                    {
+                        <div class="carousel-item">
+                            <img src="@Model.BathroomImageUrl" alt="Bathroom of the house" style="height: 65vh;">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselImages" role="button" data-bs-slide-to="prev" style="display: flex; align-items: center;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselImages" role="button" data-bs-slide="next" style="display: flex; align-items: center;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        }
+        <dl class="row col-md-6 p-4">
+            <h5>@Model.Title</h5>
+            <hr />
+            <dt class="col-sm-5">House Id</dt>
+            <dd class="col-sm-7">@Model.HouseId</dd>
+            <hr />
+            <dt class="col-sm-5">Price per night</dt>
+            <dd class="col-sm-7">@Model.PricePerNight</dd>
+
+            <dt class="col-sm-5">Location</dt>
+            <dd class="col-sm-7">@Model.Location</dd>
+
+            <dt class="col-sm-5">Description</dt>
+            <dd class="col-sm-7">@Model.Description</dd>
+
+            <dt class="col-sm-5">Bedrooms</dt>
+            <dd class="col-sm-7">@Model.Bedrooms</dd>
+
+            <dt class="col-sm-5">Bathrooms</dt>
+            <dd class="col-sm-7">@Model.Bathrooms</dd>
+
+            <dt class="col-sm-5">Host</dt>
+            <dd class="col-sm-7">@Model.User?.FirstName @Model.User?.LastName</dd>
+        </dl>
+    </div>
+
+    <p><strong>Are you sure you want to delete house #@Model.HouseId?</strong></p>
+
+    <form asp-action="DeleteConfirmed" asp-route-id="@Model.HouseId" method="post">
+        <button type="submit" class="btn btn-danger rounded-pill">Delete</button>
+        <a asp-action="Grid" class="btn btn-secondary rounded-pill">Cancel</a>
+    </form>
+</div>

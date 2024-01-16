@@ -1,0 +1,88 @@
+2023-10-31 21:36:45.010 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-10-31 21:36:45.743 +01:00 [Information] Now listening on: "https://localhost:7193"
+2023-10-31 21:36:45.744 +01:00 [Information] Now listening on: "http://localhost:5135"
+2023-10-31 21:36:45.746 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-31 21:36:45.746 +01:00 [Information] Hosting environment: "Development"
+2023-10-31 21:36:45.747 +01:00 [Information] Content root path: "/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1"
+2023-10-31 21:36:46.967 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2023-10-31 21:36:46.994 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:46.998 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2023-10-31 21:36:47.002 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-10-31 21:36:47.074 +01:00 [Information] Executed ViewResult - view "Index" executed in 73.906ms.
+2023-10-31 21:36:47.075 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 77.0491ms
+2023-10-31 21:36:47.075 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:47.077 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 111.5970ms
+2023-10-31 21:36:47.099 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:36:47.107 +01:00 [Information] Sending file. Request path: '"/Group-Project-1.styles.css"'. Physical path: '"/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1/obj/Debug/net6.0/scopedcss/bundle/Group-Project-1.styles.css"'
+2023-10-31 21:36:47.108 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 200 868 text/css 9.2125ms
+2023-10-31 21:37:09.566 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2023-10-31 21:37:09.600 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:37:09.609 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2023-10-31 21:37:09.739 +01:00 [Information] Executing ViewResult, running view "Grid".
+2023-10-31 21:37:09.831 +01:00 [Information] Executed ViewResult - view "Grid" executed in 92.6934ms.
+2023-10-31 21:37:09.831 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 222.0957ms
+2023-10-31 21:37:09.831 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:37:09.832 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 267.2178ms
+2023-10-31 21:37:09.855 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:37:09.869 +01:00 [Information] The file "/Group-Project-1.styles.css" was not modified
+2023-10-31 21:37:09.869 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 304 - text/css 14.6779ms
+2023-10-31 21:37:11.106 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Reservation/Table - -
+2023-10-31 21:37:11.121 +01:00 [Information] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user."
+2023-10-31 21:37:11.127 +01:00 [Information] AuthenticationScheme: "Identity.Application" was challenged.
+2023-10-31 21:37:11.127 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Reservation/Table - - - 302 0 - 21.0000ms
+2023-10-31 21:37:11.166 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable - -
+2023-10-31 21:37:11.193 +01:00 [Information] Executing endpoint '"/Account/Login"'
+2023-10-31 21:37:11.223 +01:00 [Information] Route matched with "{page = \"/Account/Login\", area = \"Identity\", action = \"\", controller = \"\"}". Executing page "/Account/Login"
+2023-10-31 21:37:11.247 +01:00 [Information] Executing handler method "Group_Project_1.Areas.Identity.Pages.Account.LoginModel.OnGetAsync" - ModelState is Valid
+2023-10-31 21:37:11.251 +01:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2023-10-31 21:37:11.251 +01:00 [Information] Executed handler method "OnGetAsync", returned result "".
+2023-10-31 21:37:11.253 +01:00 [Information] Executing an implicit handler method - ModelState is Valid
+2023-10-31 21:37:11.253 +01:00 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2023-10-31 21:37:11.282 +01:00 [Information] Executed page "/Account/Login" in 58.2595ms
+2023-10-31 21:37:11.282 +01:00 [Information] Executed endpoint '"/Account/Login"'
+2023-10-31 21:37:11.282 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Identity/Account/Login?ReturnUrl=%2FReservation%2FTable - - - 200 - text/html;+charset=utf-8 116.5883ms
+2023-10-31 21:37:17.936 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2023-10-31 21:37:17.939 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:37:17.939 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2023-10-31 21:37:17.992 +01:00 [Information] Executing ViewResult, running view "Grid".
+2023-10-31 21:37:17.998 +01:00 [Information] Executed ViewResult - view "Grid" executed in 6.3485ms.
+2023-10-31 21:37:17.999 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 59.6115ms
+2023-10-31 21:37:17.999 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:37:17.999 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 63.2514ms
+2023-10-31 21:37:18.024 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:37:18.024 +01:00 [Information] The file "/Group-Project-1.styles.css" was not modified
+2023-10-31 21:37:18.024 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 304 - text/css 0.3608ms
+2023-10-31 21:37:22.810 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Table - -
+2023-10-31 21:37:22.811 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Table (Group-Project-1)"'
+2023-10-31 21:37:22.817 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2023-10-31 21:37:22.827 +01:00 [Information] Executing ViewResult, running view "Table".
+2023-10-31 21:37:22.853 +01:00 [Information] Executed ViewResult - view "Table" executed in 26.6584ms.
+2023-10-31 21:37:22.853 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Table (Group-Project-1)" in 35.4717ms
+2023-10-31 21:37:22.853 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Table (Group-Project-1)"'
+2023-10-31 21:37:22.853 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Table - - - 200 - text/html;+charset=utf-8 43.0335ms
+2023-10-31 21:37:22.883 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:37:22.884 +01:00 [Information] The file "/Group-Project-1.styles.css" was not modified
+2023-10-31 21:37:22.884 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 304 - text/css 0.3500ms
+2023-10-31 21:37:26.069 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Details/4 - -
+2023-10-31 21:37:26.071 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Details (Group-Project-1)"'
+2023-10-31 21:37:26.078 +01:00 [Information] Route matched with "{action = \"Details\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32)" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2023-10-31 21:37:26.103 +01:00 [Information] Executing ViewResult, running view "Details".
+2023-10-31 21:37:26.116 +01:00 [Information] Executed ViewResult - view "Details" executed in 14.0625ms.
+2023-10-31 21:37:26.116 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Details (Group-Project-1)" in 37.546ms
+2023-10-31 21:37:26.116 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Details (Group-Project-1)"'
+2023-10-31 21:37:26.116 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Details/4 - - - 200 - text/html;+charset=utf-8 46.8668ms
+2023-10-31 21:37:26.145 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:37:26.145 +01:00 [Information] The file "/Group-Project-1.styles.css" was not modified
+2023-10-31 21:37:26.145 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 304 - text/css 0.4532ms
+2023-10-31 21:37:47.865 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2023-10-31 21:37:47.870 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:37:47.872 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2023-10-31 21:37:47.884 +01:00 [Information] Executing ViewResult, running view "Grid".
+2023-10-31 21:37:47.899 +01:00 [Information] Executed ViewResult - view "Grid" executed in 16.2445ms.
+2023-10-31 21:37:47.900 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 27.9281ms
+2023-10-31 21:37:47.900 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:37:47.900 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 36.0846ms
+2023-10-31 21:37:47.941 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - -
+2023-10-31 21:37:47.941 +01:00 [Information] The file "/Group-Project-1.styles.css" was not modified
+2023-10-31 21:37:47.941 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=LUbYaCsLPMOx57GCQOJr6Octyp7pa8sctQtuG-61Rlw - - - 304 - text/css 0.7926ms

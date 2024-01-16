@@ -1,0 +1,31 @@
+﻿@model CreateReservationViewModel
+
+<h2>Make a New Reservation</h2>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<div class="p-4 shadow-sm" style="border-radius: 15px">
+    <form asp-action="CreateReservation">
+        <div class="form-group row">
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <select asp-for="Reservation.HouseId" asp-items="Model.HouseSelectList" class="form-select">
+                    <option value="">Select a house...</option>
+                </select>
+                <label asp-for="Reservation.HouseId" class="form-label"></label>
+                <span asp-validation-for="Reservation.HouseId" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input type="date" value="@DateTime.Today" asp-for="Reservation.CheckInDate" class="form-control" min="@DateTime.Today.ToString("yyyy-MM-dd")"/>
+                <label asp-for="Reservation.CheckInDate" class="form-label"></label>
+                <span asp-validation-for="Reservation.CheckInDate" class="text-danger small"></span>
+            </div>
+            <div class="form-floating col-md-4 mb-3 gx-1">
+                <input type="date" value="@DateTime.Today.AddDays(1)" asp-for="Reservation.CheckOutDate" class="form-control" min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")"/>
+                <label asp-for="Reservation.CheckOutDate" class="form-label"></label>
+                <span asp-validation-for="Reservation.CheckOutDate" class="text-danger small"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary rounded-pill">Create</button>
+        <a asp-action="Table" class="btn btn-secondary rounded-pill">Back to Reservation View</a>
+    </form>
+</div>

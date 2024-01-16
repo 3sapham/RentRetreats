@@ -1,0 +1,17 @@
+2023-10-31 21:36:32.927 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-10-31 21:36:33.706 +01:00 [Information] Now listening on: "https://localhost:7193"
+2023-10-31 21:36:33.707 +01:00 [Information] Now listening on: "http://localhost:5135"
+2023-10-31 21:36:33.709 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-31 21:36:33.710 +01:00 [Information] Hosting environment: "Development"
+2023-10-31 21:36:33.710 +01:00 [Information] Content root path: "/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1"
+2023-10-31 21:36:34.992 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2023-10-31 21:36:35.019 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:35.024 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2023-10-31 21:36:35.028 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-10-31 21:36:35.098 +01:00 [Information] Executed ViewResult - view "Index" executed in 71.3564ms.
+2023-10-31 21:36:35.099 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 74.5809ms
+2023-10-31 21:36:35.099 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:36:35.100 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 109.9475ms
+2023-10-31 21:36:35.163 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=RTSCqXCdnyEnBDsZ26XcJvdq_tPzDbpKALjLkK1ryTA - -
+2023-10-31 21:36:35.171 +01:00 [Information] Sending file. Request path: '"/Group-Project-1.styles.css"'. Physical path: '"/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1/obj/Debug/net6.0/scopedcss/bundle/Group-Project-1.styles.css"'
+2023-10-31 21:36:35.171 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=RTSCqXCdnyEnBDsZ26XcJvdq_tPzDbpKALjLkK1ryTA - - - 200 879 text/css 8.0755ms

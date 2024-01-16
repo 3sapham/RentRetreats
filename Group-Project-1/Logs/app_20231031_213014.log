@@ -1,0 +1,31 @@
+2023-10-31 21:30:14.270 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-10-31 21:30:15.171 +01:00 [Information] Now listening on: "https://localhost:7193"
+2023-10-31 21:30:15.172 +01:00 [Information] Now listening on: "http://localhost:5135"
+2023-10-31 21:30:15.200 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-10-31 21:30:15.201 +01:00 [Information] Hosting environment: "Development"
+2023-10-31 21:30:15.201 +01:00 [Information] Content root path: "/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1"
+2023-10-31 21:30:16.580 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2023-10-31 21:30:16.619 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:30:16.628 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2023-10-31 21:30:16.636 +01:00 [Information] Executing ViewResult, running view "Index".
+2023-10-31 21:30:16.751 +01:00 [Information] Executed ViewResult - view "Index" executed in 118.4685ms.
+2023-10-31 21:30:16.752 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 123.7085ms
+2023-10-31 21:30:16.752 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2023-10-31 21:30:16.755 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 176.3437ms
+2023-10-31 21:30:16.930 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=PZQCFtmaDlHq19U5F58ZYNmyx7Hn1QaNw8kVskgLbVA - -
+2023-10-31 21:30:16.932 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/css/site.css - -
+2023-10-31 21:30:16.934 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/css/site.css - - - 404 0 - 1.8092ms
+2023-10-31 21:30:16.943 +01:00 [Information] Sending file. Request path: '"/Group-Project-1.styles.css"'. Physical path: '"/Users/teresapham/Library/CloudStorage/OneDrive-OsloMet/ITPE3200/GroupProject/Group-Project-1/Group-Project-1/obj/Debug/net6.0/scopedcss/bundle/Group-Project-1.styles.css"'
+2023-10-31 21:30:16.944 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/Group-Project-1.styles.css?v=PZQCFtmaDlHq19U5F58ZYNmyx7Hn1QaNw8kVskgLbVA - - - 200 868 text/css 13.8362ms
+2023-10-31 21:30:17.450 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/favicon.ico - -
+2023-10-31 21:30:17.457 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/favicon.ico - - - 404 0 - 7.7456ms
+2023-10-31 21:31:04.448 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2023-10-31 21:31:04.477 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:31:04.489 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2023-10-31 21:31:04.572 +01:00 [Information] Executing ViewResult, running view "Grid".
+2023-10-31 21:31:04.664 +01:00 [Information] Executed ViewResult - view "Grid" executed in 92.3697ms.
+2023-10-31 21:31:04.664 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 174.7239ms
+2023-10-31 21:31:04.664 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2023-10-31 21:31:04.667 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 219.2765ms
+2023-10-31 21:31:04.690 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/css/site.css - -
+2023-10-31 21:31:04.690 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/css/site.css - - - 404 0 - 0.4902ms

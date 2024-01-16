@@ -1,0 +1,19 @@
+﻿@model HouseListViewModel
+
+<h1>List of Houses</h1>
+<div class="container">
+    <div class="btn-group btn-group-sm mb-3" role="group" aria-label="Layout">
+        <a class="btn btn-outline-dark active" href="#">Grid View</a>
+        <a class="btn btn-outline-dark" href="/House/Table">Table View</a>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-bottom: 1rem;">
+        @foreach (var house in Model.Houses)
+        {
+            <partial name="_HouseCard" model="house" />
+        }
+    </div>
+    @if (User.IsInRole("Host"))
+    {
+        <a class="btn btn-primary rounded-pill" asp-controller="House" asp-action="Create">Add New House</a>
+    }
+</div>

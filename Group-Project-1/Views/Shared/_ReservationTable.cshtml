@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Reservation>
+
+<table class="table table-hover shadow-sm overflow-hidden" style="border-radius: 15px">
+    <thead>
+        <tr class="align-middle">
+            <th>#</th>
+            <th>House</th>
+            <th>User</th>
+            <th>Date Created</th>
+            <th>Check In Date</th>
+            <th>Check Out Date</th>
+            <th>Total Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    @foreach (var reservation in Model)
+    {
+        <tr style="cursor: pointer;" onclick="window.location.href = '@Url.Action("Details", "Reservation", new { id = reservation.ReservationId })';">
+            <td>@reservation.ReservationId</td>
+            <td>@reservation.House?.Title</td>
+            <td>@reservation.User?.FirstName @reservation.User?.LastName</td>
+            <td>@reservation.DateCreated.ToString("dd.MM.yyyy")</td>
+            <td>@reservation.CheckInDate.ToString("dd.MM.yyyy")</td>
+            <td>@reservation.CheckOutDate.ToString("dd.MM.yyyy")</td>
+            <td>@reservation.TotalPrice.ToString("0 000 kr")</td>
+            @if (!User.IsInRole("Admin"))
+            {
+                <td>
+                    <a class="w-100 btn btn-sm btn-secondary rounded-pill mb-1" asp-action="Update" asp-route-id="@reservation.ReservationId">Update</a>
+                    <a class="w-100 btn btn-sm btn-danger rounded-pill" asp-action="Delete" asp-route-id="@reservation.ReservationId">Delete</a>
+                </td>
+            }
+            else
+            {
+                <td>
+                    <a class="w-100 btn btn-sm btn-danger rounded-pill" asp-action="Delete" asp-route-id="@reservation.ReservationId">Delete</a>
+                </td>
+            }
+
+        </tr>
+        }
+</table>
+
