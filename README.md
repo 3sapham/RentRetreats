@@ -1,17 +1,17 @@
-# Group-Project-1
+# RentRetreats
 
 ## How to run the application
 Before running the application, you must run the command `dotnet restore` in the project terminal.
 
 ## Preview of the application:
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-1.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-2.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-3.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-4.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-5.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-6.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-7.jpg)
-![Model](https://github.com/3sapham/RentRetreatsAngular/blob/main/Group-Project-2/ClientApp/src/assets/Skjermbilde-8.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-1.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-2.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-3.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-4.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-5.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-6.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-7.jpg)
+![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-8.jpg)
 
 ## Account login details
 

@@ -12116,11 +12116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/Group-Project-1.csproj",
-      "projectName": "Group-Project-1",
-      "projectPath": "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/Group-Project-1.csproj",
+      "projectUniqueName": "/Users/teresapham/Projects/RentRetreats/Group-Project-1/RentRetreats.csproj",
+      "projectName": "RentRetreats",
+      "projectPath": "/Users/teresapham/Projects/RentRetreats/Group-Project-1/RentRetreats.csproj",
       "packagesPath": "/Users/teresapham/.nuget/packages/",
-      "outputPath": "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/obj/",
+      "outputPath": "/Users/teresapham/Projects/RentRetreats/Group-Project-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/teresapham/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/Group-Project-1.csproj": {}
+    "/Users/teresapham/Projects/RentRetreats/Group-Project-1/Group-Project-1.csproj": {}
   },
   "projects": {
-    "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/Group-Project-1.csproj": {
+    "/Users/teresapham/Projects/RentRetreats/Group-Project-1/Group-Project-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/Group-Project-1.csproj",
+        "projectUniqueName": "/Users/teresapham/Projects/RentRetreats/Group-Project-1/Group-Project-1.csproj",
         "projectName": "Group-Project-1",
-        "projectPath": "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/Group-Project-1.csproj",
+        "projectPath": "/Users/teresapham/Projects/RentRetreats/Group-Project-1/Group-Project-1.csproj",
         "packagesPath": "/Users/teresapham/.nuget/packages/",
-        "outputPath": "/Users/teresapham/Projects/Group-Project-1/Group-Project-1/Group-Project-1/obj/",
+        "outputPath": "/Users/teresapham/Projects/RentRetreats/Group-Project-1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/teresapham/.nuget/NuGet/NuGet.Config"

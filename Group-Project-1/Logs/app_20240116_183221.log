@@ -1,0 +1,22 @@
+2024-01-16 18:32:21.863 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2024-01-16 18:32:22.849 +01:00 [Information] Now listening on: "https://localhost:7193"
+2024-01-16 18:32:22.850 +01:00 [Information] Now listening on: "http://localhost:5135"
+2024-01-16 18:32:22.880 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2024-01-16 18:32:22.881 +01:00 [Information] Hosting environment: "Development"
+2024-01-16 18:32:22.881 +01:00 [Information] Content root path: "/Users/teresapham/Projects/RentRetreats/Group-Project-1"
+2024-01-16 18:32:24.619 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2024-01-16 18:32:24.646 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:32:24.650 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("Group-Project-1").
+2024-01-16 18:32:24.658 +01:00 [Information] Executing ViewResult, running view "Index".
+2024-01-16 18:32:24.707 +01:00 [Information] Executed ViewResult - view "Index" executed in 52.9098ms.
+2024-01-16 18:32:24.707 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (Group-Project-1)" in 56.8132ms
+2024-01-16 18:32:24.707 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (Group-Project-1)"'
+2024-01-16 18:32:24.709 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 93.5318ms
+2024-01-16 18:32:26.511 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:32:26.543 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:32:26.548 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("Group-Project-1").
+2024-01-16 18:32:26.619 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:32:26.714 +01:00 [Information] Executed ViewResult - view "Grid" executed in 95.995ms.
+2024-01-16 18:32:26.714 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)" in 166.4736ms
+2024-01-16 18:32:26.714 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (Group-Project-1)"'
+2024-01-16 18:32:26.716 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 205.3816ms

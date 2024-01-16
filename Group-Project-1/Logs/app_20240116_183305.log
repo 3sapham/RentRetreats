@@ -1,0 +1,30 @@
+2024-01-16 18:33:05.687 +01:00 [Information] User profile is available. Using '"/Users/teresapham/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2024-01-16 18:33:06.938 +01:00 [Information] Now listening on: "https://localhost:7193"
+2024-01-16 18:33:06.938 +01:00 [Information] Now listening on: "http://localhost:5135"
+2024-01-16 18:33:06.941 +01:00 [Information] Application started. Press Ctrl+C to shut down.
+2024-01-16 18:33:06.942 +01:00 [Information] Hosting environment: "Development"
+2024-01-16 18:33:06.942 +01:00 [Information] Content root path: "/Users/teresapham/Projects/RentRetreats/Group-Project-1"
+2024-01-16 18:33:08.630 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/ - -
+2024-01-16 18:33:08.660 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HomeController.Index (RentRetreats)"'
+2024-01-16 18:33:08.664 +01:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\", page = \"\", area = \"\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "Group_Project_1.Controllers.HomeController" ("RentRetreats").
+2024-01-16 18:33:08.670 +01:00 [Information] Executing ViewResult, running view "Index".
+2024-01-16 18:33:08.739 +01:00 [Information] Executed ViewResult - view "Index" executed in 71.0568ms.
+2024-01-16 18:33:08.740 +01:00 [Information] Executed action "Group_Project_1.Controllers.HomeController.Index (RentRetreats)" in 75.2457ms
+2024-01-16 18:33:08.740 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HomeController.Index (RentRetreats)"'
+2024-01-16 18:33:08.742 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/ - - - 200 - text/html;+charset=utf-8 112.9992ms
+2024-01-16 18:33:12.529 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Grid - -
+2024-01-16 18:33:12.550 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Grid (RentRetreats)"'
+2024-01-16 18:33:12.560 +01:00 [Information] Route matched with "{action = \"Grid\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "Group_Project_1.Controllers.HouseController" ("RentRetreats").
+2024-01-16 18:33:12.638 +01:00 [Information] Executing ViewResult, running view "Grid".
+2024-01-16 18:33:12.723 +01:00 [Information] Executed ViewResult - view "Grid" executed in 85.8175ms.
+2024-01-16 18:33:12.723 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Grid (RentRetreats)" in 162.9502ms
+2024-01-16 18:33:12.723 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Grid (RentRetreats)"'
+2024-01-16 18:33:12.724 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Grid - - - 200 - text/html;+charset=utf-8 196.5320ms
+2024-01-16 18:33:19.729 +01:00 [Information] Request starting HTTP/1.1 GET https://localhost:7193/House/Table - -
+2024-01-16 18:33:19.737 +01:00 [Information] Executing endpoint '"Group_Project_1.Controllers.HouseController.Table (RentRetreats)"'
+2024-01-16 18:33:19.743 +01:00 [Information] Route matched with "{action = \"Table\", controller = \"House\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "Group_Project_1.Controllers.HouseController" ("RentRetreats").
+2024-01-16 18:33:19.791 +01:00 [Information] Executing ViewResult, running view "Table".
+2024-01-16 18:33:19.804 +01:00 [Information] Executed ViewResult - view "Table" executed in 14.4605ms.
+2024-01-16 18:33:19.804 +01:00 [Information] Executed action "Group_Project_1.Controllers.HouseController.Table (RentRetreats)" in 61.4647ms
+2024-01-16 18:33:19.805 +01:00 [Information] Executed endpoint '"Group_Project_1.Controllers.HouseController.Table (RentRetreats)"'
+2024-01-16 18:33:19.805 +01:00 [Information] Request finished HTTP/1.1 GET https://localhost:7193/House/Table - - - 200 - text/html;+charset=utf-8 75.7015ms
