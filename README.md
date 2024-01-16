@@ -1,7 +1,7 @@
 # RentRetreats
 
-## How to run the application
-Before running the application, you must run the command `dotnet restore` in the project terminal.
+> [!IMPORTANT]
+> Before running the application, you must run the command `dotnet restore` in the project terminal.
 
 ## Preview of the application:
 ![Model](https://github.com/3sapham/RentRetreats/blob/main/Group-Project-1/wwwroot/images/screen/Skjermbilde-1.jpg)
@@ -18,7 +18,6 @@ Before running the application, you must run the command `dotnet restore` in the
 ### Admin
 * Email: admin@admin.com
 * Password: Admin123,
-
 
 ### User John with role Host
 * Email: john.h@gmail.com
