@@ -1,4 +1,6 @@
 # RentRetreats
+A house renting system where visitors can rent out their houses or/and rent available houses based on their roles. There are two main roles; tenant and host. Tenants can rent other houses, while hosts can additionally rent out their houses. In the application users can do CRUD-operations (create, read, update, delete) houses or/and reservations. Hosts can only update and delete their own houses. In addition there is also Admin, who can do all the operations on all the houses and reservations.
+The application is implemented using the Model-View-Controller framework of .NET.
 
 > [!IMPORTANT]
 > Before running the application, you must run the command `dotnet restore` in the project terminal.
